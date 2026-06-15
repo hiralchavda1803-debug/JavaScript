@@ -1,27 +1,51 @@
-var num =  parseInt(Math.random());
+// var num =  parseInt(Math.random());
 // console.log(Math.random());
 
 
 // console.log(parseInt(Math.random()*100));
 // console.log(Math.random()*100);
 
-for(;;)
+
+var number = Math.floor(Math.random()*100);
+var count = 0;
+let winner = false;
+
+for (;;)
 {
-    let value = Number (prompt("Enter the Number:"));
-
-    if(num > value)
+    while(count <= 10)
     {
-        alert("Guess Higher Number");
+        let num = Number(prompt("Enter the Number Between 1 too 100."));
+        count++;
+
+        if (number > num)
+        {
+            alert("Too High");
+        }
+        else if(number == num)
+        {
+            alert("Congralutions! You winner.!");
+            alert(count);
+            winner = true;
+            break;
+        }
+        else
+        {
+            alert("Too Low");
+        }
     }
-
-    else if(num == value)
+    let play = prompt("What You play Again : Yes / No ");
+    if (play == "Yes")
     {
-        alert("Correct Number");
+        console.log("Start Game...");
+    }
+    else
+    {
+        console.log("Game is Over...");
         break;
     }
 
-    else
-    {
-        alert("Guess Lower Number");
-    }
+}
+if(!Win)
+{
+    alert("Game is Over...");
 }

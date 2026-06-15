@@ -45,7 +45,7 @@ console.log("Control Statement : ");
 // var n2 = Number(prompt("Enter the Value of N2"));
 // var n3 = Number(prompt("Enter the Value of N3"));
 
-// document.querySelectorAll('p')[0].innerHTML = "Value of N1 :" + n1;
+// document.querySelectorAll('p')[0].innerHTML = "Value of N1 :" + n1;  
 // document.querySelectorAll('p')[1].innerHTML = "Value of N2 :" + n2;
 // document.querySelectorAll('p')[2].innerHTML = "Value of N3 :" + n3;
 
