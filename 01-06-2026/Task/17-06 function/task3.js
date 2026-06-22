@@ -64,10 +64,10 @@
 
         alert(
             "Product : " + pname +
-            "\nAmount : " + amount +
-            "\nDiscount : " + dis +
-            "\nTax : " + tx +
-            "\nFinal Bill : " + finalBill
+            "Amount : " + amount +
+            "Discount : " + dis +
+            "Tax : " + tx +
+            "Final Bill : " + finalBill
         );
     }
 
