@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+ <h1>1.Basic Operations:</h1>
+ <h1>2.Queue Simulation:</h1>
+ <h1>3.Stack Simulation:</h1>
+ <h1>4.Insertion and Deletion at the Beginning:</h1>
+ <h1>5.Array Reversal:</h1>
+ <h1>6.Updating an Array:</h1>
+ <h1>7.Array Length Changes:</h1>
+ <h1>8.Remove First Element:</h1>
+    <script>
+        //    Q1....
+            var number = [1,2,3];
+            console.log(number,"Original Number: ");
+            number.push(4);
+            console.log(number);
+            
+            console.log(number,"Push Element:");
+            number.pop();
+            console.log(number,"Pop Element:");
+            console.log(" ");
+            
+        // Q2....
+        var queue = [];
+        queue.push(1);
+        queue.push(2);
+        queue.push(3);
+        console.log(queue,"Queue Element:");
+
+        console.log(queue.shift(),"Removed Element:");
+        console.log(queue,"Queue Element");
+        
+        console.log(queue.shift(),"Removed Element:");
+        console.log(queue,"Queue Element");
+
+        console.log(queue.shift(),"Removed Element:");
+        console.log(queue,"Queue Element");
+        console.log(" ");
+
+
+        // Q3....
+        var stack = [];
+        stack.push(1);
+        stack.push(2);
+        stack.push(3);
+        console.log(stack,"Stack Element:");
+
+        console.log(stack.pop(),"Removed Element:");
+        console.log(stack,"Stack Element");
+        
+        console.log(stack.pop(),"Removed Element:");
+        console.log(stack,"Stack Element");
+
+        console.log(stack.pop(),"Removed Element:");
+        console.log(stack,"Stack Element");
+        console.log(" ");
+        
+
+        // Q4....
+        var letters = ['b','c'];
+
+        console.log("A update:")
+        letters.unshift('a');
+        console.log(letters);
+
+        console.log("A remove:")
+        letters.shift();
+        console.log(letters);
+        console.log(" ");
+
+
+        // Q5
+        var arr = [1,2,3,4,5];
+        console.log(arr);
+
+        console.log("Revers Array:");
+        for (let i = arr.length-1; i >= 0; i--) 
+        {
+        console.log(arr[arr.unshift()-1]);
+        arr.pop();
+        }
+        console.log(" ");
+        
+        
+        // Q6
+        var names = [ 'John', 'Jane', 'Doe' ];
+        console.log(names,"Original Name:");
+
+        names.push('Smith');
+        console.log(names,"Push Name:");
+
+        names.pop();
+        console.log(names,"Pop Name:");
+
+        names.unshift('Alice');
+        console.log(names,"Unshift Name:");
+
+        names.shift();
+        console.log(names,"Shift Name:");
+        console.log(" ");
+        
+        
+        // Q7
+        var fruits = ['apple', 'orange', 'banana'];
+        console.log("Original Array:", fruits);
+        console.log("Length:", fruits.length);
+        
+        fruits.push('grape');   
+        console.log("After push('grape'):", fruits);
+        console.log("Length:", fruits.length);
+
+        fruits.pop();
+        console.log("After pop():", fruits);
+        console.log("Length:", fruits.length);
+
+        fruits.unshift('pear');
+        console.log("After unshift('pear'):", fruits);
+        console.log("Length:", fruits.length);
+
+
+        fruits.shift();
+        console.log("After shift():", fruits);
+        console.log("Length:", fruits.length);
+        console.log(" ");
+        
+        
+        // Q8
+        var arr = [10,20,30,40,50];
+        console.log(arr);
+
+        arr.splice(0,1);
+        console.log(arr);
+        
+        
+        
+
+        
+
+
+    </script>
+</body>
+</html>
