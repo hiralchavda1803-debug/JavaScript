@@ -16,4 +16,5 @@ document.querySelector('form').onsubmit = function(event)
     event.preventDefault();
     
     document.querySelector('span').innerHTML = document.querySelector('input').value;
+    document.querySelector('input').value ="";
 }
