@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body 
+        {
+            background-color: #003049;
+            display: flex;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            margin-top: 100px;
+            border: 1px solid #fff;
+            padding: 20px;
+            height: 300px;
+        }
+
+        input 
+        {
+            padding: 10px;
+            border-radius: 5px;
+            border: none;
+        }
+
+        input[type="submit"] 
+        {
+            background-color: #f77f00;
+            color: #fff;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <input type="text" name="username" placeholder="Username">
+        <br>
+        <input type="password" name="password" placeholder="Password">
+        <br>
+        <input type="submit" value="Login">
+    </form>
+
+
+
+    <script>
+        const username = "Hello World";
+        const password = "123456";
+
+        document.querySelector('form').onsubmit = function(event)
+        {
+            event.preventDefault();
+            // console.log(document.querySelectorAll('input')[0].value);
+            // console.log(document.querySelectorAll('input')[1].value);
+
+            if(document.querySelectorAll('input')[0].value==username)
+        {
+            if(document.querySelectorAll('input')[1].value==password)
+            {
+                alert("Login Successful");
+            }
+            else
+            {
+                alert("Incorrect Password");
+            }
+        }
+        else
+        {
+            alert("Incorrect Username");
+        }
+
+
+        }
+    </script>
+</body>
+</html>
