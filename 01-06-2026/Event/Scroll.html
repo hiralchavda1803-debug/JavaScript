@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *
+        {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body
+        {
+            display: flex;
+            justify-content: center;
+            height: 200vh;
+            background-color:#5f0f40;
+        }
+
+        button
+        {
+            background-color: #0f4c5c;
+            color: white;
+           font-family: vrdana;
+            font-size: 24px;
+            padding: 10px 20px;
+            position: absolute;
+            bottom: 20px;
+            border: none;
+        }
+
+        .temp
+        {
+            top: 0px;
+            left: 0px;
+            height: 50px;
+        }
+    </style>
+</head>
+<body>
+    <button>Click Here</button>
+
+    <script>
+           document.body.onscroll = function ()
+           {
+            document.body.style.backgroundColor = "#e36414";
+           }
+
+           document.querySelector('button').classList.add ('temp');
+        
+    </script>
+</body>
+</html>
