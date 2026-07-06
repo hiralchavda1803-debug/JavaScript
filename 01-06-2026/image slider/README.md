@@ -34,7 +34,7 @@ img5.jpg
 
 ## 📸ScreenShot
 
-![Project ScreenShot](screenshot.png)
+![Project ScreenShot](./screenshot.png)
 
 ## 💿 Project Video
 
