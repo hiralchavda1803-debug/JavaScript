@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    background-color: #3e5641;
+    text-align: center;
+    justify-content: center;
+    padding: 20px;
+
+}
+
+div
+{
+    background-color: #d36135;
+    color:#282b28;
+    display: none;
+    justify-content: center;
+    padding: 50px;
+    font-size: 30px;
+
+}
+</style>
+
+</head>
+<body>
+<div>This is a SetTimeout example</div>
+
+
+<script>
+        setTimeout(() => 
+{
+    document.querySelector('div').style.display = 'block';
+}, 5000);
+
+</script>
+
+
+</body>
+</html>
